@@ -21,6 +21,9 @@ Code illustration: 4.07
 
 @ Tkinter GUI Application Development Blueprints
 
+
+Test
+
 """
 
 from tkinter import Tk, Menu, Label, Frame, Canvas, RIGHT, PhotoImage, messagebox
