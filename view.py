@@ -4,6 +4,9 @@
    PROGRAMMER:  Aleksandar Kljaic
    DATE:        Saturday February 29, 2020
 
+   NOTES:
+       * AI is currently a work in progress. - March 2, 2020
+
 
 """
 
