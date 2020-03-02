@@ -76,10 +76,11 @@ class View():
     def create_about_menu(self):
         self.about_menu = Menu(self.menu_bar, tearoff=0)
         self.about_menu.add_command(
-            label="LinkedIn", command=self.on_about_menu_clicked)
+            label="LinkedIn", command=self.on_about_menu_clicked)  # Adding menu options
         self.about_menu.add_command(
-            label="Github", command=self.on_about_menu_clicked)
+            label="Github", command=self.on_about_menu_clicked)  # Adding menu options
         self.menu_bar.add_cascade(label="About", menu=self.about_menu)
+        self.menu_bar.add_cascade(label="About", menu=self.about_menu)  # Adding menu options
         self.parent.config(menu=self.menu_bar)
 
     def create_canvas(self):
