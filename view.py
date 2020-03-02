@@ -79,6 +79,8 @@ class View():
             label="LinkedIn", command=self.on_about_menu_clicked)  # Adding menu options
         self.about_menu.add_command(
             label="Github", command=self.on_about_menu_clicked)  # Adding menu options
+        self.about_menu.add_command(
+            label="Quit", command=self.on_about_menu_clicked)  # Adding menu options
         self.menu_bar.add_cascade(label="About", menu=self.about_menu)
         self.menu_bar.add_cascade(label="About", menu=self.about_menu)  # Adding menu options
         self.parent.config(menu=self.menu_bar)
