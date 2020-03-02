@@ -1,28 +1,5 @@
 """
-Code illustration: 4.07
 
-    new import
-        import preferenceswindow
-
-
-    new attributes added here:
-        board_color_1 = BOARD_COLOR_1
-        board_color_2 = BOARD_COLOR_2
-        highlight_color = HIGHLIGHT_COLOR
-
-    new methods added here:
-        reload_colors(color_1, color_2, highlight_color)
-
-    methods modified here:
-        replaces all color constants with color instance variables in these two methods:
-            draw_board()
-            alternate_color(current_color)
-
-
-@ Tkinter GUI Application Development Blueprints
-
-
-Test
 
 """
 
@@ -220,8 +197,8 @@ class View():
             self.draw_single_piece(position, piece)
 
     def on_about_menu_clicked(self):
-        messagebox.showinfo("From the Book:",
-                            "Tkinter GUI Application\n Development Blueprints")
+        messagebox.showinfo("About",
+                            "Github:\n https://github.com/Hexers")
 
 
 def main(model):

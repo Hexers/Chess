@@ -1,9 +1,6 @@
 """
-Code illustration: 4.07
 
-    this entire file added here
 
-@ Tkinter GUI Application Development Blueprints
 """
 
 

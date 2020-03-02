@@ -1,7 +1,6 @@
 """
-Code illustration: 4.07
 
-@ Tkinter GUI Application Development Blueprints
+
 """
 
 from configurations import *
