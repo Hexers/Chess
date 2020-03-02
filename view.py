@@ -76,7 +76,9 @@ class View():
     def create_about_menu(self):
         self.about_menu = Menu(self.menu_bar, tearoff=0)
         self.about_menu.add_command(
-            label="About", command=self.on_about_menu_clicked)
+            label="LinkedIn", command=self.on_about_menu_clicked)
+        self.about_menu.add_command(
+            label="Github", command=self.on_about_menu_clicked)
         self.menu_bar.add_cascade(label="About", menu=self.about_menu)
         self.parent.config(menu=self.menu_bar)
 
@@ -210,7 +212,7 @@ class View():
 
 def main(model):
     root = Tk()
-    root.title("Chess")
+    root.title("Chess - Aleksandar Kljaic")
     View(root, model)
     root.mainloop()
 
