@@ -15,7 +15,7 @@ import controller
 import exceptions
 from configurations import *
 import preferenceswindow
-
+import webbrowser
 
 class View():
 
@@ -76,13 +76,19 @@ class View():
     def create_about_menu(self):
         self.about_menu = Menu(self.menu_bar, tearoff=0)
         self.about_menu.add_command(
-            label="LinkedIn", command=self.on_about_menu_clicked)  # Adding menu options
+            label="About Me", command=self.openUrlHexers)  # Adding menu options
         self.about_menu.add_command(
-            label="Github", command=self.on_about_menu_clicked)  # Adding menu options
+            label="LinkedIn", command=self.openUrlLinkedIn)  # Adding menu options
         self.about_menu.add_command(
-            label="Quit", command=self.on_about_menu_clicked)  # Adding menu options
+            label="Github", command=self.openUrlGitHub)  # Adding menu options
+        self.about_menu.add_command(
+            label="Twitter", command=self.openUrlTwitter)  # Adding menu options
+        self.about_menu.add_command(
+            label="Twitch Tv", command=self.openUrlTwitchTv)   # Adding menu options
+        self.about_menu.add_command(
+            label="Random", command=self.on_about_menu_clicked) # Adding menu options
+
         self.menu_bar.add_cascade(label="About", menu=self.about_menu)
-        self.menu_bar.add_cascade(label="About", menu=self.about_menu)  # Adding menu options
         self.parent.config(menu=self.menu_bar)
 
     def create_canvas(self):
@@ -210,8 +216,17 @@ class View():
 
     def on_about_menu_clicked(self):
         messagebox.showinfo("About",
-                            "Github:\n https://github.com/Hexers")
-
+                           "By:\n Aleksandar Kljaic")
+    def openUrlHexers(self):
+        webbrowser.open('http://www.hexers.net/')
+    def openUrlLinkedIn(self):
+        webbrowser.open('https://www.linkedin.com/in/hexers/')
+    def openUrlGitHub(self):
+        webbrowser.open('https://www.github.com/Hexers/')
+    def openUrlTwitter(self):
+        webbrowser.open('http://www.twitter.com/hexersrs')
+    def openUrlTwitchTv(self):
+        webbrowser.open('http://www.twitch.tv/hexers')
 
 def main(model):
     root = Tk()
